@@ -1,35 +1,21 @@
-# Linux Server Health Monitoring and Alert Automation Script
+# Linux Server Health Monitoring Script
 
-## Project Description
-This project is a Linux shell script that monitors the health and performance of a server. It tracks CPU usage, memory consumption, disk utilization, and active processes. The script also supports threshold-based alerts, activity logging, continuous monitoring, and an interactive terminal menu.
+## Overview
+This project is a Bash-based monitoring tool that checks system performance and provides alerts when resource usage exceeds defined limits.
 
 ## Features
-- Displays current CPU, memory, disk, and process usage
-- Allows users to configure CPU, memory, and disk thresholds
-- Generates warning alerts when thresholds are exceeded
-- Saves monitoring activity and alerts into a log file
-- Supports continuous monitoring with a configurable time interval
-- Provides an interactive command-line menu
-- Includes input validation and dependency checking
-
-## Files
-- `monitor.sh` - main shell script
-- `monitor_config.conf` - stores monitoring thresholds and interval
-- `server_health.log` - stores activity logs and alerts
-- `.gitignore` - ignores generated files
+- Monitors CPU, memory, disk usage, and running processes
+- Allows configuration of threshold values
+- Generates alerts when limits are exceeded
+- Stores logs with timestamps
+- Provides a simple command-line menu
 
 ## Tools Used
-- Bash shell scripting
-- Linux commands:
-  - `top`
-  - `free`
-  - `df`
-  - `ps`
-  - `awk`
-  - `grep`
+- Bash scripting
+- Linux system commands: top, free, df, ps
 
 ## How to Run
 
-### Step 1: Give execute permission
+1. Give execution permission:
 ```bash
 chmod +x monitor.sh
